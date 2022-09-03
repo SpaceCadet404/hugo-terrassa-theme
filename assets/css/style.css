@@ -1,7 +1,8 @@
 /* HEADER */
 .header {
-	background-color: var(--white);
-	box-shadow: 0 1px 5px var(--divider);
+	background-color: none; /* var(--white);*/
+	background-image: linear-gradient(to bottom left, var(--white), #FFF);
+	box-shadow: 0 2px 5px var(--divider);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
@@ -161,6 +162,8 @@
 }
 
 .hero__caption > h1 {
+	font-family: Bad Script;
+	text-shadow: 2px 2px #fff;
 	font-size: var(--title);
 }
 
@@ -421,7 +424,7 @@
 	background-color: var(--white);
 	border-top: 1px solid var(--divider);
 	border-bottom: 1px solid var(--divider);
-	display: flex;
+	display: none;  /* change to flex to display this bar*/
 	flex-wrap: wrap;
 	grid-area: social;
 	justify-content: space-evenly;
@@ -549,6 +552,7 @@
 	position: relative;
 	transform: translate3d(0, 0, 0);
 	transition: all 0.25s;
+	border-radius: 12px;
 }
 
 .ripple-btn:hover,
@@ -557,7 +561,7 @@
 	color: var(--white);
 }
 
-.ripple-btn::after {
+.ripple-tn::after {
 	background-image: radial-gradient(
 		circle,
 		var(--primary-light) 10%,
